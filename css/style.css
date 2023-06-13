@@ -45,7 +45,7 @@ p {
     letter-spacing: 0.02em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     p {
         font-size: 15px;
     }
@@ -97,9 +97,9 @@ p {
     float: left;
     font-family: var(--ff-primary);
     color: var(--clr-light);
-    font-size: 27px;
+    font-size: 1.8rem;
     font-weight: 15;
-    line-height: 50px;
+    line-height: 3rem;
     padding-left: 20px;
     transition-duration: 0.5s;
 }
@@ -112,7 +112,7 @@ p {
 .nav_bar{
     background: var(--clr-dark);
     font-family: var(--ff-primary);
-    width: 100vw;
+    width: 100%;
 }
 
 .nav_bar:after{
@@ -157,8 +157,8 @@ p {
     color: var(--clr-light);
     text-decoration: none;
     background-color: var(--clr-dark);
-    line-height: 50px;
-    font-size: 16px;
+    line-height: 3.8rem;
+    font-size: 1.25rem;
     letter-spacing: 0.1em;
     padding: 8px 15px;
     transition-duration: 0.3s;
@@ -171,7 +171,7 @@ p {
 
 .nav_bar .bar_list .bar_list{
     position: absolute;
-    top: 50px;
+    top: 3.8rem;
     display: block;
     opacity: 0;
     visibility: hidden;
@@ -180,7 +180,7 @@ p {
 .nav_bar .bar_list .bar_list .bar_item{
     position: relative;
     margin: 0;
-    width: 220px;
+    width: 300px;
     float: none;
     display: list-item;
 }
@@ -190,7 +190,7 @@ p {
     display: block;
     position: relative;
     background-color: var(--clr-light);
-    width: 220px;
+    width: 300px;
     height: 2px;
     margin: 0;
 }
@@ -199,28 +199,43 @@ p {
     display: none;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1000px) {
+    .nav_bar {
+        height: 5.65rem;
+    }
+
     .nav_bar:after{
         margin-left: 0;
         width: 0;
         height: 0;
     }
 
-    .nav_bar .bar_list{
-        margin-right: 0;
-        float: left;
-    }
-
     .nav_bar .logo{
         padding-left: 0;
         text-align: center;
+        line-height: 5.0rem;
         width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .nav_bar .bar_item:after{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 96%;
+        margin: 0 1% 0 1%;
+        background-color: var(--clr-light);
     }
 
     .nav_bar .bar_list{
         display: inline-flex;
         flex-direction: column;
         padding: 5em 0 5em 0;
+        margin-right: 0;
+        float: left;
+        width: 100%;
+        background-color: var(--clr-dark);
     }
 
     .nav_bar .bar_list .bar_list{
@@ -236,6 +251,7 @@ p {
     .show{
         display: block;
         color: var(--clr-light);
+        font-size: 1.25rem;
         letter-spacing: 0.1em;
         padding: 0 15px;
         line-height: 50px;
@@ -246,6 +262,10 @@ p {
     .show:hover{
         color: gray;
         transition-duration: 0.3s;
+    }
+
+    .nav_bar .bar_list .bar_list .bar_item:after{
+        display: none;
     }
 
     .nav_bar .logo:hover{
@@ -259,8 +279,8 @@ p {
         color: var(--clr-light);
         position: absolute;
         right: 10%;
-        line-height: 50px;
-        font-size: 18px;
+        line-height: 5rem;
+        font-size: 2rem;
         transition-duration: 0.2s;
     }
 
@@ -295,6 +315,7 @@ p {
     color: var(--clr-light);
     font-family: var(--ff-primary);
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -304,7 +325,7 @@ p {
     opacity: 0;
     font-weight: 400;
     align-content: center;
-    font-size: 92px;
+    font-size: 5.25rem;
     color: var(--clr-light-dark);
     animation: fadeIn 0.8s ease 0.2s forwards;
 }
@@ -323,7 +344,7 @@ p {
 .intro__description_l1, .intro__description_l2{
     padding: 0 0 0 100px;
     font-weight: 200;
-    font-size: 34px;
+    font-size: 1.675rem;
 }
 
 .intro__description_l1 .keyword{
@@ -341,6 +362,7 @@ p {
 
 .intro__research {
     padding: 180px 0 0 100px;
+    font-size: 0.85rem;
 }
 
 .intro__research:after {
@@ -356,40 +378,49 @@ p {
     animation: underline 1.5s forwards;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     .into__name {
         font-weight: 400;
-        font-size: 56px;
+        font-size: 5rem;
     }
 
-    .intro__description_l1, .intro__description_l2{
-        font-size: 24px;
-    }
-
-    .intro__research {
-        font-size: 14px;
-    }
-}
-
-
-@media (max-width: 800px) {
-    .into__name {
-        font-weight: 300;
-        font-size: 40px;
+    .intro__description_l1, .intro__description_l2 {
+        font-size: 1.5rem;
     }
 
     .into__name .leq {
         padding: 0 0 0 50px;
     }
 
-    .intro__description_l1, .intro__description_l2{
-        font-size: 18px;
-        padding: 0 0 0 50px;
+    .intro__research {
+        font-size: 1rem;
+        padding: 180px 0 0 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .into__name {
+        font-weight: 400;
+        font-size: 3.125rem;
+    }
+
+    .intro__description_l1, .intro__description_l2 {
+        font-size: 1.125rem;
     }
 
     .intro__research {
-        font-size: 13px;
-        padding: 180px 0 0 50px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .into__name {
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    .intro__description_l1, .intro__description_l2 {
+        font-size: 0.85rem;
     }
 }
 
@@ -480,9 +511,13 @@ p {
 }
 
 
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
     .projects_header {
         font-size: 34px;
+    }
+
+    .research-project, .swe-project {
+        max-width: 80%;
     }
 }
 
@@ -551,7 +586,19 @@ p {
     color: var(--clr-g);
 }
 
-@media (min-width: 800px) {
+.skills__page {
+    height: auto;
+}
+
+.skills-item {
+    padding: 0 50px 80px 50px;
+}
+
+.skills-item p .keyword, .skills-item h2  {
+    color: var(--clr-g);
+}
+
+@media (min-width: 1000px) {
     .skills_header {
         font-size: 44px;
     }
@@ -561,8 +608,7 @@ p {
     }
 
     .skills-item {
-        padding: 0 10px 80px 10px;
-        max-width: 350px;
+        padding: 0 10px 50px 10px;
     }
 
     .skills-item:first-child {
@@ -576,46 +622,26 @@ p {
     }
 }
 
-.skills__page {
-    height: auto;
-}
-
-.skills-item {
-    padding: 0 20px 80px 50px;
-    max-width: 500px;
-}
-
-.skills-item p .keyword, .skills-item h2  {
-    color: var(--clr-g);
-}
-
 
 /* About Me */
 
 .about__container {
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    height: 150vh;
     background-color: var(--clr-dark);
     color: var(--clr-light);
     font-family: var(--ff-primary);
     font-weight: normal;
-    font-size: 50px;
     background-image: url("../images/full-body-bw.PNG"), url("../images/background-profile.png");
     background-position: center right, center right;
     background-repeat: no-repeat;
     background-size: 300px, 500px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .about__container {
-        height: 175vh;
-    }
-}
-
-@media (max-width: 600px) {
-    .about__container {
-        height: 150vh;
+        height: 1250px;
     }
 }
 
@@ -624,7 +650,7 @@ p {
     color: var(--clr-light-dark);
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 34px;
+    font-size: 44px;
     opacity: 1;
 }
 
@@ -642,24 +668,40 @@ p {
 
 .about_item {
     padding: 0 0 0 50px;
-    margin: 25px 0 25px;
+    margin: 25px 0 50px;
 }
 
 .about_item p{
     display: none;
     visibility: hidden;
     position: relative;
-    font-size: 15px;
-    max-width: 50%;
+    width: 50%;
 }
 
-@media (max-width: 900px) {
-    .about_item p{
-        max-width: 85%;
-    }
 
+@media (max-width: 1000px) {
     .about_item:last-child{
         padding-bottom: 100px;
+    }
+
+    .about_item h2 {
+        font-size: 34px;
+    }
+
+    .about_item p{
+        font-size: 24px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 850px) {
+    .about_item h2 {
+        font-size: 1.25em;
+    }
+
+    .about_item p{
+        font-size: 1.0em;
+        width: 90%;
     }
 }
 
@@ -697,6 +739,7 @@ p {
     flex-direction: row;
     justify-content: space-around;
     width: 100vw;
+    background: var(--clr-light);
 }
 
 .contact__container .contact_list .contact_element {
