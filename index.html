@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+    <nav class="nav_bar">
+        <div class="logo">CS</div>
+
+        <label for="btn-main" class="icon">
+            <span class="menu"></span>
+        </label>
+        <input type="checkbox" id="btn-main">
+
+        <ul class="bar_list">
+            <li class="bar_item"><a href="#home">Home</a></li>
+            <li class="bar_item">
+                <label for="btn-projects" class="show">Projects +</label>
+                <a class="hide" href="#projects">Projects</a>
+                <input type="checkbox" id="btn-projects">
+                <ul class="bar_list">
+                    <li class="bar_item"><a href="#research_projects">Research Engineering</a></li>
+                    <li class="bar_item"><a href="#swe_projects">Software Engineering</a></li>
+                </ul>
+            </li>
+            <li class="bar_item"><a href="#skills">Skills</a></li>
+            <li class="bar_item"><a href="#about">About</a></li>
+            <li class="bar_item"><a href="resume.pdf" target="_blank">Resume/CV</a></li>
+            <li class="bar_item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="home__container" id="home">
+        <h1 class="into__name">
+            <a class="leq"> > </a> <a class="keyword">Carlos</a> Gustavo Salas
+        </h1>
+        <p class="intro__description_l1">
+            <a class="keyword">Cloud Developer</a>, Data Scientist and <a class="keyword-2">Research Engineer</a>
+        </p>
+        <p class="intro__description_l2">
+            with a <a class="keyword">passion for AI</a> and the search for AGI.
+        </p>
+        <p class="intro__research">
+            <i> Research Interests: Image, Music, & Video Generation,
+            Diffusion Models, Computer Vision and Deep Reinforcement Learning. </i>
+        </p>
+    </section>
+
+    <section class="projects__container" id="projects">
+        <div class="projects__research" id="research_projects">
+            <h1 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Research Engineering</a> Projects</h1>
+            <div class="research-project">
+                <h2>Low-Resource Contrastive Language Image Pre-learning</h2>
+                <p>
+                    Contrastive Language Image Pre-training (CLIP)  is an algorithm developed by
+                    OpenAI that <a class="keyword">connects text with images</a>.
+                    It makes use of <a class="keyword">Natural Language Processing</a>
+                    (NLP) and <a class="keyword">Computer Vision</a> to project them onto the same space.
+                    I worked on my own implementation of this algorithm, wrote the pseudocode
+                    for general implementation, implemented it from-scratch (PyTorch), built a
+                    new dataset of <a class="keyword">24 million text-image pairs</a> for this task,
+                    and trained on low-computing resources.
+                </p>
+            </div>
+            <div class="research-project">
+                <h2>Recreation of Generative Adversarial Networks and Diffusion Models</h2>
+                <p>
+                    Generative Adversarial Networks (GANs) and Diffusion Models are neural network
+                    models that are used to <a class="keyword">generate images</a> and other media.
+                    These algorithms were very influential to build current state-of-the-art
+                    image generation algorithms such as DALLE-2, Stable Diffusion, and Midjourney.
+                    I implemented the original papers “Generative Adversarial Networks” and
+                    “Deep Unsupervised Learning using Non-equilibrium Thermodynamics” and trained
+                    them on MNIST.
+                </p>
+            </div>
+            <div class="research-project">
+                <h2>Reinforcement Learning and Algorithms for High Frequency Trading</h2>
+                <p>
+                    Reinforcement Learning uses <a class="keyword">Q-Learning</a> to approximate the actions taken by
+                    an agent to the ideal actions it could take under a given environment, in this case,
+                    a trading environment. I evaluate <a class="keyword">Convolutional Neural Networks</a> (CNNs) vs
+                    <a class="keyword">Vision Transformers</a> (ViTs). I found that not only do ViT's outperform CNNs but they also
+                    take more steady strategies throughout.
+                </p>
+            </div>
+        </div>
+
+        <div class="projects__swe" id="swe_projects">
+            <h1 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Software Engineering</a> Projects</h1>
+            <div class="swe-project">
+                <h2>Cloud-Native Music Recommendation System</h2>
+                <p>
+                    Built an <a class="keyword">API</a> to make music recommendations using Playlists from the user.
+                    I built the front-end on <a class="keyword">Flask</a> and the back-end on <a class="keyword">Lambda</a>.
+                    The recommender consists of two microservices, the ml-model trainer and the recommendation system,
+                    both were running on the cloud. I used <a class="keyword">Kubernetes</a> for orchestration and
+                    <a class="keyword">ArgoCD</a> for continuous development.
+                </p>
+            </div>
+            <div class="swe-project">
+                <h2>Cloud-Native Web Monitoring Dashboard</h2>
+                <p>
+                    Developed and deployed a real-time Web Monitoring dashboard. This service used <a class="keyword">Redis</a> to store
+                    temporary information and <a class="keyword">Flask</a> for the front-end. I developed the web-dashboard using
+                    <a class="keyword">D3.js</a> to show and monitor Memory Use, CPU Use, and Network Use. In this case, I used a
+                    function as a service to make the calculations as well as <a class="keyword">ArgoDC</a> and <a class="keyword">Kubernetes</a> for continuous
+                    deployment and orchestration.
+                </p>
+            </div>
+            <div class="swe-project">
+                <h2>Chess Engine</h2>
+                <p>
+                    Ongoing Project: I am building a chess engine in <a class="keyword">C++</a> with a GUI that I plan on using to train
+                    my own version of <a class="keyword">AlphaZero</a> for chess.
+                </p>
+            </div>
+            <div class="swe-project">
+                <h2>Breakout Game</h2>
+                <p>
+                    I built a copy of the famous Atari 2600 game: Breakout using <a class="keyword">Java</a>. I followed an
+                    <a class="keyword">Object Oriented Programming</a> coding style.
+                </p>
+            </div>
+        </div>
+
+<!--        <div class="projects__data_analysis" id="analysis_projects">-->
+<!--            <h1 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Data Analysis</a> Projects</h1>-->
+<!--            <div class="data-analysis-project">-->
+<!--                <h2>Airbnb Customer Segmentation</h2>-->
+<!--                <p>-->
+<!--                    I ran a full-analysis on data about NYC Airbnbs. I segmented the customers to find out-->
+<!--                    suspicious groups of users who are most likely running hotels through the app.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="data-analysis-project">-->
+<!--                <h2>Red Bull Batalla</h2>-->
+<!--                <p>-->
+<!--                    To analyze the scope and impact of Red Bull Batalla in the world, I retieved data from-->
+<!--                    Google Trends along with the dates that major RBB events were held and analyzed how many-->
+<!--                    countries tuned in during different events. I visualized the results on Tableau.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+    </section>
+
+    <section class="skills__page" id="skills">
+        <h1 class="skills_header"> <a class="leq"> > </a> <a class="keyword">Skills</a></h1>
+        <div class="skills__container">
+            <div class="skills-item">
+                <h2>Cloud Development</h2>
+                <p>
+                    I deploy <a class="keyword">Cloud-Native APIs</a> and <a class="keyword">Web Applications</a>.
+                    I am experienced using <a class="keyword">AWS</a> services such as S3, EC2, and Lambda to deploy
+                    machine learning and other algorithms, I can also use open source technologies
+                    such as <a class="keyword">Docker</a>, <a class="keyword">Kubernetes</a>, and <a class="keyword">ArgoCD</a>.
+                </p>
+            </div>
+
+            <div class="skills-item">
+                <h2>Data Science</h2>
+                <p>
+                    Data is very important in today’s world for any business,
+                    I am able to conduct <a class="keyword">full-data analysis</a>,
+                    <a class="keyword">mine and scrape data</a>,
+                    and build <a class="keyword">ETL pipelines</a> to extract
+                    insights that will benefit your users and give helpful recommendations
+                    to improve your user’s experience.
+                </p>
+            </div>
+
+            <div class="skills-item">
+                <h2>Research Engineering</h2>
+                <p>
+                    From the moment I learned about AI, I was all about it.
+                    I have a <a class="keyword">strong math</a> and <a class="keyword">statistics</a>
+                    background that allows me to <a class="keyword">implement</a> cutting-edge
+                    <a class="keyword">research papers</a> on Deep Learning, understand their underlying
+                    mechanisms and adapt them for other purposes. I am currently working on
+                    projects involving <a class="keyword">Reinforcement Learning</a>,
+                    <a class="keyword">Image Synthesis</a>, and <a class="keyword">Recommendation Systems</a>.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about__container" id="about">
+        <h1 class="about_header"> <a class="leq"> > </a> <a class="keyword">About me</a></h1>
+        <div class="about_item">
+            <h2 class="about_title">Education</h2>
+            <p>
+                I obtained a dual-degree from <a class="keyword">Duke Kunshan University</a> in China and
+                <a class="keyword">Duke University</a> in the US. I choose to major in Data Science which
+                is why I have a deep understanding of statistics and mathematics
+                for Machine Learning.
+            </p>
+        </div>
+        <div class="about_item">
+            <h2 class="about_title">SDE Intern @ Amazon</h2>
+            <p>
+                In my junior year of college, I interned at Amazon Web Services at
+                <a class="keyword">Lambda Science</a> team which conducts customer research and produces insights and
+                recommendations for the company. Therefore, the nature of my internship
+                was on conducting data analysis which concluded with producing a Web Dashboard
+                for the service I was part of.
+                <br>
+
+                <br>
+                I learned to use AWS Services such as S3, EC2, and Lamda. Furthermore, I
+                had the chance to learn and work alongside experienced Researchers and
+                Engineers who taught me the skills necessary to thrive in new environments.
+            </p>
+        </div>
+        <div class="about_item">
+            <h2 class="about_title">Research Assistant @ Duke & DKU</h2>
+            <p>
+                In sophomore year, I worked alongside <i class="keyword">Prof. Ashutosh Kotwal</i>
+                from the Department of Physics. We conducted research on sorting algorithms for
+                FPGAs with the intention of improving the path recognition algorithm used at the
+                Large Hadron Collider.
+                <br>
+
+                <br>
+                In junior year, I joined <i class="keyword">Prof. Luyao Zhang</i> conducting
+                research on trading algorithms for the crypto market. This resulted in a workshop
+                paper presented at IEEE Blockchain 2022.
+                <br>
+
+                <br>
+                Lastly, in my senior year, I presented my project on a Low-Resource Implementation of
+                CLIP to <i class="keyword">Prof. Dongmian Zou</i> and Prof. Luyao Zhang
+                who helped me to submit it to the International Conference in Machine Learning (ICML).
+            </p>
+        </div>
+
+        <div class="about_item">
+            <h2 class="about_title">Hobbies</h2>
+            <p>
+                I love <a class="keyword">Dancing</a>. I am especially training
+                <a class="keyword">gymnastics</a> to improve my <a class="keyword">breaking</a>
+                and <a class="keyword">hip-hop</a> skills. I started learning during
+                my senior year at Duke and I decided to continue on my own. I train 3-5 times a
+                week depending on my availability.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="contact__container" id="contact">
+        <ul class="contact_list">
+            <li class="contact_element" ><a href="https://www.linkedin.com/in/carlosgustavosalas/">LinkedIn</a></li>
+            <li class="contact_element" ><a href="https://github.com/cs582">GitHub</a></li>
+            <li class="contact_element" ><a href="mailto:yuseicarlos2560@gmail.com">yuseicarlos2560@gmail.com</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
