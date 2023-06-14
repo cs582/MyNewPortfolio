@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+
 </head>
 <body>
 <header>
@@ -40,143 +41,158 @@
         <h1 class="into__name">
             <a class="leq"> > </a> <a class="keyword">Carlos</a> Gustavo Salas
         </h1>
-        <p class="intro__description_l1">
+        <h2 class="intro__description_l1">
             <a class="keyword">Cloud Developer</a>, Data Scientist and <a class="keyword-2">Research Engineer</a>
-        </p>
-        <p class="intro__description_l2">
+        </h2>
+        <h2 class="intro__description_l2">
             with a <a class="keyword">passion for AI</a> and the search for AGI.
-        </p>
-        <p class="intro__research">
+        </h2>
+        <h4 class="intro__research">
             <i> Research Interests: Image, Music, & Video Generation,
             Diffusion Models, Computer Vision and Deep Reinforcement Learning. </i>
-        </p>
+        </h4>
     </section>
 
     <section class="projects__container" id="projects">
         <div class="projects__research" id="research_projects">
-            <h1 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Research Engineering</a> Projects</h1>
-            <div class="research-project">
-                <h2>Low-Resource Contrastive Language Image Pre-learning</h2>
-                <p>
-                    Contrastive Language Image Pre-training (CLIP)  is an algorithm developed by
-                    OpenAI that <a class="keyword">connects text with images</a>.
-                    It makes use of <a class="keyword">Natural Language Processing</a>
-                    (NLP) and <a class="keyword">Computer Vision</a> to project them onto the same space.
-                    I worked on my own implementation of this algorithm, wrote the pseudocode
-                    for general implementation, implemented it from-scratch (PyTorch), built a
-                    new dataset of <a class="keyword">24 million text-image pairs</a> for this task,
-                    and trained on low-computing resources.
-                    <br>
-                    <br>
-                    <a class="source_code_link" href="https://github.com/cs582/CLIP_implementation" target="_blank">Source Code <i class="fab fa-docker"></i></a>
-                </p>
+            <h2 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Research Engineering</a> Projects</h2>
+            <div class="project_box">
+                <div class="project_description">
+                    <h3>Low-Resource Contrastive Language Image Pre-learning</h3>
+                    <p>
+                        Contrastive Language Image Pre-training (CLIP)  is an algorithm developed by
+                        OpenAI that <a class="keyword">connects text with images</a>.
+                        It makes use of <a class="keyword">Natural Language Processing</a>
+                        (NLP) and <a class="keyword">Computer Vision</a> to project them onto the same space.
+                        I worked on my own implementation of this algorithm, wrote the pseudocode
+                        for general implementation, implemented it from-scratch (PyTorch), built a
+                        new dataset of <a class="keyword">24 million text-image pairs</a> for this task,
+                        and trained on low-computing resources.
+                        <br>
+                        <br>
+                        <a class="source_code_link" href="https://github.com/cs582/CLIP_implementation" target="_blank">Source Code <i class="fab fa-docker"></i></a>
+                    </p>
+                </div>
+                <div class="project_image">
+                    <img src="images/graphic-elements/clip-img.png">
+                </div>
             </div>
-            <div class="research-project">
-                <h2>Recreation of Generative Adversarial Networks and Diffusion Models</h2>
-                <p>
-                    Generative Adversarial Networks (GANs) and Diffusion Models are neural network
-                    models that are used to <a class="keyword">generate images</a> and other media.
-                    These algorithms were very influential to build current state-of-the-art
-                    image generation algorithms such as DALLE-2, Stable Diffusion, and Midjourney.
-                    I implemented the original papers “Generative Adversarial Networks” and
-                    “Deep Unsupervised Learning using Non-equilibrium Thermodynamics” and trained
-                    them on MNIST.
-                    <br>
-                    <br>
-                    <a class="source_code_link" href="https://github.com/cs582/GAN_and_Diffusion_Models" target="_blank">Source Code <i class="fab fa-github"></i></a>
-                </p>
+            <div class="project_box">
+                <div class="project_description">
+                    <h3>Recreation of Generative Adversarial Networks and Diffusion Models</h3>
+                    <p>
+                        Generative Adversarial Networks (GANs) and Diffusion Models are neural network
+                        models that are used to <a class="keyword">generate images</a> and other media.
+                        These algorithms were very influential to build current state-of-the-art
+                        image generation algorithms such as DALLE-2, Stable Diffusion, and Midjourney.
+                        I implemented the original papers “Generative Adversarial Networks” and
+                        “Deep Unsupervised Learning using Non-equilibrium Thermodynamics” and trained
+                        them on MNIST.
+                        <br>
+                        <br>
+                        <a class="source_code_link" href="https://github.com/cs582/GAN_and_Diffusion_Models" target="_blank">Source Code <i class="fab fa-github"></i></a>
+                    </p>
+                </div>
+                <div class="project_image">
+                    <img src="images/graphic-elements/gan.png">
+                </div>
             </div>
-            <div class="research-project">
-                <h2>Reinforcement Learning and Algorithms for High Frequency Trading</h2>
-                <p>
-                    Reinforcement Learning uses <a class="keyword">Q-Learning</a> to approximate the actions taken by
-                    an agent to the ideal actions it could take under a given environment, in this case,
-                    a trading environment. I evaluate <a class="keyword">Convolutional Neural Networks</a> (CNNs) vs
-                    <a class="keyword">Vision Transformers</a> (ViTs). I found that not only do ViT's outperform CNNs but they also
-                    take more steady strategies throughout.
-                    <br>
-                    <br>
-                    <a class="source_code_link" href="https://github.com/cs582/SignatureWorkReinforcementLearning" target="_blank">Source Code <i class="fab fa-github"></i></a>
-                </p>
+            <div class="project_box">
+                <div class="project_description">
+                    <h3>Reinforcement Learning and Algorithms for High Frequency Trading</h3>
+                    <p>
+                        Reinforcement Learning uses <a class="keyword">Q-Learning</a> to approximate the actions taken by
+                        an agent to the ideal actions it could take under a given environment, in this case,
+                        a trading environment. I evaluate <a class="keyword">Convolutional Neural Networks</a> (CNNs) vs
+                        <a class="keyword">Vision Transformers</a> (ViTs). I found that not only do ViT's outperform CNNs but they also
+                        take more steady strategies throughout.
+                        <br>
+                        <br>
+                        <a class="source_code_link" href="https://github.com/cs582/SignatureWorkReinforcementLearning" target="_blank">Source Code <i class="fab fa-github"></i></a>
+                    </p>
+                </div>
+                <div class="project_image">
+                    <img src="images/graphic-elements/dqn.png">
+                </div>
             </div>
         </div>
 
         <div class="projects__swe" id="swe_projects">
-            <h1 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Software Engineering</a> Projects</h1>
-            <div class="swe-project">
-                <h2>Cloud-Native Music Recommendation System</h2>
-                <p>
-                    Built an <a class="keyword">API</a> to make music recommendations using Playlists from the user.
-                    I built the front-end on <a class="keyword">Flask</a> and the back-end on <a class="keyword">Lambda</a>.
-                    The recommender consists of two microservices, the ml-model trainer and the recommendation system,
-                    both were running on the cloud. I used <a class="keyword">Kubernetes</a> for orchestration and
-                    <a class="keyword">ArgoCD</a> for continuous development.
-                    <br>
-                    <br>
-                    <a class="source_code_link" href="https://hub.docker.com/r/yuseicarlos/playlist-recommender/tags" target="_blank">Container <i class="fab fa-docker"></i></a>
-                </p>
+            <h2 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Software Engineering</a> Projects</h2>
+            <div class="project_box">
+                <div class="project_description">
+                    <h3>Cloud-Native Music Recommendation System</h3>
+                    <p>
+                        Built an <a class="keyword">API</a> to make music recommendations using Playlists from the user.
+                        I built the front-end on <a class="keyword">Flask</a> and the back-end on <a class="keyword">Lambda</a>.
+                        The recommender consists of two microservices, the ml-model trainer and the recommendation system,
+                        both were running on the cloud. I used <a class="keyword">Kubernetes</a> for orchestration and
+                        <a class="keyword">ArgoCD</a> for continuous development.
+                        <br>
+                        <br>
+                        <a class="source_code_link" href="https://hub.docker.com/r/yuseicarlos/playlist-recommender/tags" target="_blank">Container <i class="fab fa-docker"></i></a>
+                    </p>
+                </div>
+                <div class="project_image">
+                    <img src="">
+                </div>
             </div>
-            <div class="swe-project">
-                <h2>Cloud-Native Web Monitoring Dashboard</h2>
-                <p>
-                    Developed and deployed a real-time Web Monitoring dashboard. This service used <a class="keyword">Redis</a> to store
-                    temporary information and <a class="keyword">Flask</a> for the front-end. I developed the web-dashboard using
-                    <a class="keyword">D3.js</a> to show and monitor Memory Use, CPU Use, and Network Use. In this case, I used a
-                    function as a service to make the calculations as well as <a class="keyword">ArgoDC</a> and <a class="keyword">Kubernetes</a> for continuous
-                    deployment and orchestration.
-                    <br>
-                    <br>
-                    <a class="source_code_link" href="https://hub.docker.com/r/yuseicarlos/dashboard-app/tags" target="_blank">Container <i class="fab fa-docker"></i></a>
-                </p>
+            <div class="project_box">
+                <div class="project_description">
+                    <h3>Cloud-Native Web Monitoring Dashboard</h3>
+                    <p>
+                        Developed and deployed a real-time Web Monitoring dashboard. This service used <a class="keyword">Redis</a> to store
+                        temporary information and <a class="keyword">Flask</a> for the front-end. I developed the web-dashboard using
+                        <a class="keyword">D3.js</a> to show and monitor Memory Use, CPU Use, and Network Use. In this case, I used a
+                        function as a service to make the calculations as well as <a class="keyword">ArgoDC</a> and <a class="keyword">Kubernetes</a> for continuous
+                        deployment and orchestration.
+                        <br>
+                        <br>
+                        <a class="source_code_link" href="https://hub.docker.com/r/yuseicarlos/dashboard-app/tags" target="_blank">Container <i class="fab fa-docker"></i></a>
+                    </p>
+                </div>
+                <div class="project_image">
+                    <img src="">
+                </div>
             </div>
-            <div class="swe-project">
-                <h2>Chess Engine</h2>
-                <p>
-                    Ongoing Project: I am building a chess engine in <a class="keyword">C++</a> with a GUI that I plan on using to train
-                    my own version of <a class="keyword">AlphaZero</a> for chess.
-                    <br>
-                    <br>
-                    <a class="source_code_link" href="https://github.com/cs582/ChessBoardGame" target="_blank">Source Code <i class="fab fa-github"></i></a>
-                </p>
+            <div class="project_box">
+                <div class="project_description">
+                    <h3>Chess Engine</h3>
+                    <p>
+                        Ongoing Project: I am building a chess engine in <a class="keyword">C++</a> with a GUI that I plan on using to train
+                        my own version of <a class="keyword">AlphaZero</a> for chess.
+                        <br>
+                        <br>
+                        <a class="source_code_link" href="https://github.com/cs582/ChessBoardGame" target="_blank">Source Code <i class="fab fa-github"></i></a>
+                    </p>
+                </div>
+                <div class="project_image">
+                    <img src="images/graphic-elements/chess.png" alt="an image of a chess board">
+                </div>
             </div>
-            <div class="swe-project">
-                <h2>Breakout Game</h2>
-                <p>
-                    I built a copy of the famous Atari 2600 game: Breakout using <a class="keyword">Java</a>. I followed an
-                    <a class="keyword">Object Oriented Programming</a> coding style.
-                    <br>
-                    <br>
-                    <a class="source_code_link" href="https://github.com/cs582/Atari-breakout-game" target="_blank">Source Code <i class="fab fa-github"></i></a>
-                </p>
+            <div class="project_box">
+                <div class="project_description">
+                    <h3>Breakout Game</h3>
+                    <p>
+                        I built a copy of the famous Atari 2600 game: Breakout using <a class="keyword">Java</a>. I followed an
+                        <a class="keyword">Object Oriented Programming</a> coding style.
+                        <br>
+                        <br>
+                        <a class="source_code_link" href="https://github.com/cs582/Atari-breakout-game" target="_blank">Source Code <i class="fab fa-github"></i></a>
+                    </p>
+                </div>
+                <div class="project_image">
+                    <img src="images/graphic-elements/breakout.png">
+                </div>
             </div>
         </div>
-
-<!--        <div class="projects__data_analysis" id="analysis_projects">-->
-<!--            <h1 class="projects_header"> <a class="leq"> > </a> <a class="keyword">Data Analysis</a> Projects</h1>-->
-<!--            <div class="data-analysis-project">-->
-<!--                <h2>Airbnb Customer Segmentation</h2>-->
-<!--                <p>-->
-<!--                    I ran a full-analysis on data about NYC Airbnbs. I segmented the customers to find out-->
-<!--                    suspicious groups of users who are most likely running hotels through the app.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div class="data-analysis-project">-->
-<!--                <h2>Red Bull Batalla</h2>-->
-<!--                <p>-->
-<!--                    To analyze the scope and impact of Red Bull Batalla in the world, I retieved data from-->
-<!--                    Google Trends along with the dates that major RBB events were held and analyzed how many-->
-<!--                    countries tuned in during different events. I visualized the results on Tableau.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
-
     </section>
 
     <section class="skills__page" id="skills">
-        <h1 class="skills_header"> <a class="leq"> > </a> <a class="keyword">Skills</a></h1>
+        <h2 class="skills_header"> <a class="leq"> > </a> <a class="keyword">Skills</a></h2>
         <div class="skills__container">
             <div class="skills-item">
-                <h2>Cloud Development</h2>
+                <h3>Cloud Development</h3>
                 <p>
                     I deploy <a class="keyword">Cloud-Native APIs</a> and <a class="keyword">Web Applications</a>.
                     I am experienced using <a class="keyword">AWS</a> services such as S3, EC2, and Lambda to deploy
@@ -186,7 +202,7 @@
             </div>
 
             <div class="skills-item">
-                <h2>Data Science</h2>
+                <h3>Data Science</h3>
                 <p>
                     Data is very important in today’s world for any business,
                     I am able to conduct <a class="keyword">full-data analysis</a>,
@@ -198,7 +214,7 @@
             </div>
 
             <div class="skills-item">
-                <h2>Research Engineering</h2>
+                <h3>Research Engineering</h3>
                 <p>
                     From the moment I learned about AI, I was all about it.
                     I have a <a class="keyword">strong math</a> and <a class="keyword">statistics</a>
@@ -211,77 +227,94 @@
             </div>
         </div>
 
+        <div class="tools_container">
+            <div><i title="Python" class="fab fa-python"></i><br><a>Python</a></div>
+            <div><i title="C++" class="fab fa-cuttlefish"></i><br><a>C++</a></div>
+            <div><i title="Java" class="fab fa-java"></i><br><a>Java</a></div>
+            <div><i title="Amazon Web Services" class="fab fa-aws"></i><br><a>AWS</a></div>
+            <div><i title="Docker" class="fab fa-docker"></i><br><a>Docker</a></div>
+            <div title="Kubernetes" >⎈<br><a>Kubernetes</a></div>
+            <div><i title="ArgoCD" class="fas fa-arrow-right"></i><br><a>ArgoCD</a></div>
+            <div title="Mathematics" ><span>&pi;</span><br><a>Mathematics</a></div>
+            <div title="Statistics" ><span>&sigma;</span><br><a>Statistics</a></div>
+            <div><i title="HTML" class="fab fa-html5"></i><br><a>HTML</a></div>
+            <div><i title="CSS" class="fab fa-css3-alt"></i><br><a>CSS</a></div>
+            <div><i title="GitHub" class="fab fa-github"></i><br><a>Github</a></div>
+        </div>
+
     </section>
 
     <section class="about__container" id="about">
-        <h1 class="about_header"> <a class="leq"> > </a> <a class="keyword">About me</a></h1>
-        <div class="about_item">
-            <h2 class="about_title">Education</h2>
-            <p>
-                I obtained a dual-degree from <a class="keyword">Duke Kunshan University</a> in China and
-                <a class="keyword">Duke University</a> in the US. I choose to major in Data Science which
-                is why I have a deep understanding of statistics and mathematics
-                for Machine Learning.
-            </p>
+        <h2 class="about_header"> <a class="leq"> > </a> <a class="keyword">About me</a></h2>
+        <div class="about_text">
+            <div class="about_item">
+                <h3>Education</h3>
+                <p class="about_education">
+                    I obtained a <a class="keyword">dual-degree</a> from <a class="keyword">Duke
+                    Kunshan University</a> in China and <a class="keyword">Duke University</a>
+                    in the US. I chose to <a class="keyword">major in Data Science</a> which is
+                    why I have a deep understanding of Statistics and Mathematics for Machine Learning.
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="about_item">
+                <h3>Professional Experience</h3>
+                <p class="about_experience">
+                    In my junior year of college, I interned at <a class="keyword">Amazon Web Services</a> at
+                    <a class="keyword">Lambda Science</a> team which conducts customer research and produces insights and
+                    recommendations for the company. Therefore, the nature of my internship
+                    was on conducting data analysis which concluded with producing a Web Dashboard
+                    for the service I was part of.
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="about_item">
+                <h3>Research</h3>
+                <p class="about_research">
+                    During my time at college, I also had the opportunity to work alongside
+                    <i class="keyword">Prof. Ashutosh Kotwal</i> from the Department of Physics.
+                    We conducted research on sorting algorithms for FPGAs with the intention of
+                    improving the path recognition algorithm used at the Large Hadron Collider.
+                    <br>
+                    <br>
+                    As part of a summer research program, I joined <i class="keyword">Prof. Luyao Zhang</i>
+                    in conducting research on trading algorithms for the crypto market.
+                    This resulted in a workshop paper presented at IEEE Blockchain 2022.
+                    <br>
+                    <br>
+                    Right before graduating, I presented my project on a Low-Resource Implementation of
+                    CLIP to <i class="keyword">Prof. Dongmian Zou</i> and Prof. Luyao Zhang
+                    who helped me to submit it to the International Conference in Machine Learning (ICML).
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="about_item">
+                <h3>Hobbies</h3>
+                <p class="about_hobbies">
+                    I love <a class="keyword">Dancing</a>. I am especially training
+                    <a class="keyword">gymnastics</a> to improve my <a class="keyword">breaking</a>
+                    and <a class="keyword">hip-hop</a> skills. I started learning during
+                    my senior year at Duke and I decided to continue on my own. I train 3-5 times a
+                    week depending on my availability.
+                </p>
+            </div>
+
+            <div class="about_item" id="contact">
+                <h3>Contact</h3>
+                <div class="about_contact">
+                    <div class="social_media_icon"><a href="https://www.linkedin.com/in/carlosgustavosalas/"><i title="LinkedIn" class="fab fa-linkedin"></i></a></div>
+                    <div class="social_media_icon"><a href="https://github.com/cs582"><i title="Github" class="fab fa-github"></i></a></div>
+                    <div class="social_media_icon"><a href="mailto:yuseicarlos2560@gmail.com"><i title="Email" class="fa fa-envelope"></i></a></div>
+                </div>
+            </div>
+
         </div>
-        <div class="about_item">
-            <h2 class="about_title">SDE Intern @ Amazon</h2>
-            <p>
-                In my junior year of college, I interned at Amazon Web Services at
-                <a class="keyword">Lambda Science</a> team which conducts customer research and produces insights and
-                recommendations for the company. Therefore, the nature of my internship
-                was on conducting data analysis which concluded with producing a Web Dashboard
-                for the service I was part of.
-                <br>
-
-                <br>
-                I learned to use AWS Services such as S3, EC2, and Lamda. Furthermore, I
-                had the chance to learn and work alongside experienced Researchers and
-                Engineers who taught me the skills necessary to thrive in new environments.
-            </p>
-        </div>
-        <div class="about_item">
-            <h2 class="about_title">Research Assistant @ Duke & DKU</h2>
-            <p>
-                In sophomore year, I worked alongside <i class="keyword">Prof. Ashutosh Kotwal</i>
-                from the Department of Physics. We conducted research on sorting algorithms for
-                FPGAs with the intention of improving the path recognition algorithm used at the
-                Large Hadron Collider.
-                <br>
-
-                <br>
-                In junior year, I joined <i class="keyword">Prof. Luyao Zhang</i> conducting
-                research on trading algorithms for the crypto market. This resulted in a workshop
-                paper presented at IEEE Blockchain 2022.
-                <br>
-
-                <br>
-                Lastly, in my senior year, I presented my project on a Low-Resource Implementation of
-                CLIP to <i class="keyword">Prof. Dongmian Zou</i> and Prof. Luyao Zhang
-                who helped me to submit it to the International Conference in Machine Learning (ICML).
-            </p>
-        </div>
-
-        <div class="about_item">
-            <h2 class="about_title">Hobbies</h2>
-            <p>
-                I love <a class="keyword">Dancing</a>. I am especially training
-                <a class="keyword">gymnastics</a> to improve my <a class="keyword">breaking</a>
-                and <a class="keyword">hip-hop</a> skills. I started learning during
-                my senior year at Duke and I decided to continue on my own. I train 3-5 times a
-                week depending on my availability.
-            </p>
-        </div>
-
     </section>
-
-    <section class="contact__container" id="contact">
-        <ul class="contact_list">
-            <li class="contact_element" ><a href="https://www.linkedin.com/in/carlosgustavosalas/">LinkedIn</a></li>
-            <li class="contact_element" ><a href="https://github.com/cs582">GitHub</a></li>
-            <li class="contact_element" ><a href="mailto:yuseicarlos2560@gmail.com">yuseicarlos2560@gmail.com</a></li>
-        </ul>
-    </section>
-
 </body>
+<footer>
+    Copyright © Carlos Gustavo Salas Flores 2023
+</footer>
 </html>
